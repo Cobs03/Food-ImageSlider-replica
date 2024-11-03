@@ -1,0 +1,383 @@
+:root {
+    --var-nav-background-gradient-1: #5E61C8;
+    --var-background: #E7EEFB;
+    --var-navbar-gradient-1: #FCBFFB;
+    --var-navbar-gradient-2: #9693CB;
+    --var-button-background: #B0D9F1;
+    --var-button-background2: #D9D9D9;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url('Fonts/made_carving_soft//MADECarvingSoftPERSONALUSE-Light.otf') format('opentype');
+}
+
+@font-face {
+    font-family: raphtalia;
+    src: url('Fonts/raphtalia/Raphtalia\ Personal\ Use.otf') format('opentype');
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: myFont;
+}
+
+body {
+    background: var(--var-background);
+    height: auto;
+    margin-bottom: 100px;
+
+}
+
+nav {
+    width: 100%;
+    height: 175px;
+    background: linear-gradient(to bottom, var(--var-nav-background-gradient-1), var(--var-background));
+    display: flex;
+    justify-content: space-around;
+}
+
+nav img {
+    height: 145px;
+    width: 155px;
+    margin-top: 1em;
+}
+
+nav .navbar {
+    background: linear-gradient(to bottom, var(--var-navbar-gradient-1), var(--var-navbar-gradient-2));
+    width: 452px;
+    height: 43px;
+    border-radius: 28px;
+    box-shadow: 10px 10px 4px #584CB8;
+    margin-top: 4em;
+}
+
+nav .navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    line-height: 43px;
+}
+
+nav .navbar ul li {
+    list-style-type: none;
+}
+
+nav .navbar ul li a{
+    text-decoration: none;
+    color: #091040;
+    font-weight: bold;
+}
+
+nav button {
+    height: 49px;
+    width: 221px;
+    border-radius: 28px;
+    font-size: 1.2em;
+    border: 2px solid #6F51FF;
+    background: var(--var-button-background);
+    margin-top: 3em;
+    color: #091040;
+    cursor: pointer;
+}
+
+
+.slideFirst {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.bestSellerTitle{
+    background: #C6C8F7;
+    width: 195px;
+    height: 49px;
+    line-height: 49px;
+    padding: 0 40px;
+    border-bottom-right-radius: 50px;
+}
+
+.sidePanel {
+    width: 377px;
+    height: 506px;
+    background: var(--var-background);
+    position: absolute;
+    right: 0;
+    top: 30px;
+    
+}
+
+.sidePanel .rectangle {
+    width: 293px;
+    height: 506px;
+    position: absolute;
+    background: 
+        linear-gradient(to bottom, #32365E, #D6D5F7) no-repeat, /* Gradient layer */
+        #D6D5F7; /* Background color layer */
+    background-size: 100% 300px; /* Gradient covers 100% width and 300px height */
+    background-position: top; /* Position gradient at the top */
+    right: 0;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    padding: 20px;
+    z-index: 100;
+    overflow: hidden;
+}
+
+
+
+.sidePanel .subtractCircle {
+    width: 215px;
+    height: 210px;
+    position: absolute;
+    background:var(--var-background);
+    z-index: 200;
+    top: 50px;
+    left: -10px;
+    border-radius: 50%;
+
+}
+
+.sidePanel .subtractCircle::before {
+    content: '';
+    width: 20px;
+    height: 20px ;
+    background: linear-gradient(to bottom, #44486F, #4B4F76);
+    position: absolute;
+    top: -20px;
+    left: 94px;
+    border-bottom-left-radius: 10px; 
+    border-top-left-radius: 20px;
+    box-shadow: -5px 5px var(--var-background);
+}
+
+.sidePanel .subtractCircle::after {
+    content: '';
+    width: 20px;
+    height: 20px ;
+    background: linear-gradient(to bottom, #C2C1E4, #CACAEC);
+    position: absolute;
+    top: 210px;
+    left: 94px;
+    border-top-left-radius: 10px; 
+    box-shadow: -5px -5px var(--var-background);
+}
+
+.sidePanel .circle {
+    height: 190px;
+    width: 190px;
+    background: #fc54ff;
+    position: absolute;
+    z-index: 300;
+    border-radius: 50%;
+    top: 3.7em;
+}
+
+.sidePanel .circle img {
+    height: 100px;
+    position: absolute; 
+    top: 50px;
+    left: 10px;
+    transition: transform 0.8s ease;
+}
+
+
+.sidePanel .circle p {
+    font-size: 3.2em;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    font-family: raphtalia;
+}
+
+.sidePanel .rectangle p {
+
+    position: absolute;
+    top: 53%;
+    text-align: center;
+}
+
+.sidePanel .rectangle p span {
+    color: #e954e9;
+}
+
+.porkFontSize {
+    font-size: 2.1em;
+}
+
+.fishFontSize {
+    font-size: 1.8em;
+}
+.chickenFontSize {
+    font-size: 1.9em;
+}
+.beefFontSize {
+    font-size: 2em;
+}
+
+
+.sidePanel button {
+    height: 49px;
+    width: 221px;
+    border-radius: 28px;
+    font-size: 1.2em;
+    border: 2px solid #6F51FF;
+    background: var(--var-button-background);
+    margin-top: 3em;
+    color: #091040;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.slider {
+    position: relative;
+
+    height: 580px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider img {
+    position: absolute;
+    height: 400px;
+    filter: drop-shadow(20px 20px 4px #6a6a6a77);
+    z-index: 10;
+    top: 140px;
+
+}
+
+.hide {
+    opacity: 0;
+
+}
+
+.nextHide {
+    left: 50%;
+    opacity: 0;
+    transition: opacity 0.5s ease, left 0.5s ease;
+}
+
+.prevHide {
+    left: -200%;
+    opacity: 0;
+    transition: opacity 0.5s ease, left 0.5s ease;
+}
+
+.show {
+    left: 230px;
+    opacity: 1;
+    transition: opacity 0.5s ease, left 0.5s ease;
+}
+
+
+
+.anotherCircle {
+    height: 413px;
+    width: 414px;
+    background: #C6C8F7;
+    border-radius: 50%;
+    filter: blur(10px);
+    position: absolute;
+    left: 270px;
+    top: 120px;
+}
+
+.dishName  {
+    position: absolute;
+}
+
+.dishName p {
+    font-size: 3.5em;
+    font-family: raphtalia;
+    position: absolute;
+    left: 30px;
+    color: #CF8BF2;
+
+}
+
+.dishName p:nth-child(2) {
+    font-size: 5.5em;
+    font-family: raphtalia;
+    position: absolute;
+    left: 100px;
+    top: 60px;
+    z-index: 1;
+    color: black;
+}
+
+#firstMealWord, #secondMealWord, #rate, #sideSlogan,#bestSellerTitle {
+    transition: all 0.5s ease;
+}
+
+.fade-out {
+    opacity: 0; /* Fade out */
+    transform: translateX(-10px); /* Optional: slide up effect */
+}
+
+.fade-in {
+    opacity: 0; /* Fade out */
+    transform: translateX(10px); /* Optional: slide up effect */
+}
+
+.slideFirst .dishName p:nth-child(1) {
+    width: 250px;
+}
+
+.controller {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background:var(--var-background);
+    width: 998px;
+    left: 290px;
+    align-items: center;
+}
+
+.controller button {
+    background: transparent;
+    cursor: pointer;
+    border: 0;
+    height: 70px;
+    
+}
+
+.controller > button:nth-of-type(1) {
+    transform: rotateY(180deg);
+}
+
+.controller .selections {
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.controller .selections button {
+    width: 170px;
+    height: 226px;
+    position: relative;
+    border-radius: 15px;
+    transition: all 0.8s ease;
+    padding: 10px;
+    background: var(--var-button-background2);
+}
+
+.controller .selections button:hover {
+    background: #aeacff;
+
+}
+
+.controller .selections button img {
+    height: 100px;
+
+}
+
+.controller .selections button p {
+    font-size: 1.3em;
+}

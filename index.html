@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <img src="Assets/FOOD-LOGO.png" alt="JB-FOODS-LOGO">
+
+        <div class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </div>
+
+        <button>Order Now</button>
+    </nav>
+    
+
+    <section class="slideFirst">
+
+        <div class="bestSellerTitle">
+            <p id="bestSellerTitle">#1 Best Seller</p>
+        </div>
+
+        <div class="sidePanel">
+            
+            <div class="circle">
+                <img src="https://i.ibb.co/qyWNByt/1651842-bethlehem-christmas-star-icon.png" id="starRotate" alt="1651842-bethlehem-christmas-star-icon" >
+                <p id="rate">3.0</p>
+            </div>
+            
+            <div class="subtractCircle"></div>
+            
+            <div class="rectangle">
+
+                
+                <p id="sideSlogan"></p> 
+
+                <button>Order Now</button>
+
+            </div>
+
+        </div>
+
+        <div class="dishName">
+            <p id="firstMealWord">PORK</p>
+            <p id="secondMealWord">SISIG</p>
+        </div>
+        <div class="slider">
+            <img src="https://i.ibb.co/2P5Mv1m/Pork.png" alt="Pork" class="hide">
+            <img src="https://i.ibb.co/vhqnP4t/Fish.png" alt="Fish" class="hide">
+            <img src="https://i.ibb.co/jT76X3K/Chicken.png" alt="Chicken" class="hide">
+            <img src="https://i.ibb.co/f47wQDc/Beef.png" alt="Beef" class="hide">
+        </div>
+
+        <div class="anotherCircle"></div>
+
+        <div class="controller">
+            
+            <button type="button" onclick="prev()"><img src="https://i.ibb.co/dMdctNv/F9rame-9.png" alt="Frame-9" ></button>
+
+
+            <div class="selections">
+                <button type="button" onclick="pork()">
+                    <img src="https://i.ibb.co/2P5Mv1m/Pork.png" alt="Pork">
+                    <p>Pork Sisig</p>
+                </button>
+
+                <button type="button" onclick="fish()">
+                    <img src="https://i.ibb.co/vhqnP4t/Fish.png" alt="Fish">
+                    <p>Daing na Bangus</p>
+                </button>
+
+                <button type="button" onclick="chicken()" >
+                    <img src="https://i.ibb.co/jT76X3K/Chicken.png" alt="Chicken">
+                    <p>Chicken Adobo</p>
+                </button>
+
+                <button type="button" onclick="beef()" >
+                    <img src="https://i.ibb.co/f47wQDc/Beef.png" alt="Beef">
+                    <p>Beef Pares</p>
+                </button>
+            </div>
+
+            <button type="button" onclick="next()"><img src="https://i.ibb.co/dMdctNv/Frame-9.png" alt="Frame-9" ></button>
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
