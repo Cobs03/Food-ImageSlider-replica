@@ -138,6 +138,7 @@ function next() {
         
         // Slide out the current image to the right
         currentImage.classList.replace('show', 'nextHide');
+        console.log("red");
         
         // Clean up classes after the transition
         setTimeout(() => {
