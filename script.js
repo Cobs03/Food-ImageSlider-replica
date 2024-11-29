@@ -111,7 +111,7 @@ function fadeOutEffect() {
 
 function next() {
 
-    fadeOutEffect();
+     fadeOutEffect();
 
     rotationAngle += 90;
 
@@ -121,16 +121,18 @@ function next() {
     const currentImage = images[index];
     const currentControlImage = controlImages[index];
 
+
+    currentControlImage.style.background = "#D9D9D9";
+
     index = (index >= images.length - 1) ? 0 : index + 1;
 
     const nextImage = images[index];
     const nextControlImage = controlImages[index];
 
+    nextControlImage.style.background = "linear-gradient(to bottom, rgb(187, 0, 255), rgb(255, 0, 234))";
 
-    currentControlImage.style.setProperty('--var-button-background2', '#D9D9D9');
 
     nextImage.classList.replace('hide', 'prevHide'); // Show the next image immediately
-    nextControlImage.style.setProperty('--var-button-background2', 'linear-gradient(to bottom, rgb(187, 0, 255), rgb(255, 0, 234))');
 
     setTimeout(() => {
         // Slide in the new image from the left
